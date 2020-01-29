@@ -51,6 +51,7 @@
 	*{
 		margin: 0;
 		padding: 0;
+		display: grid;
 	}
 
 #scontainer{
@@ -71,21 +72,39 @@
 	grid-gap: 10px;
 }
 
+#survey-form{
+	display: grid;
+
+
+}
+
 #name, #email, #number{
 	width:70%;
 	height: 40px;
 	border-radius: 10px;
 	margin: 10px;
 	justify-self: center;
-	
+
+}
+
+#dropdown{
+	height:40px;
+	width: 70%;
+	margin: 10px;
+	border-radius: 10px;
+	justify-self: center;
+
 }
 
 #comment1{
-	grid-row: 1/1;
-	position: relative;
 	width: 100%;
-	height: 200px;
+	height: 100px;
 	background-color: red;
 	justify-self: end;
+	margin-top: 200px;
 }
 
+#submit{
+	height: 70px;
+	width: 100px;
+}
