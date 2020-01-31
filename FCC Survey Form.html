@@ -4,14 +4,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
 	<link href="FCCSF.css" rel="stylesheet" type="text/css">
 	</head>
-	<body>
+	<body id="body">
 		<header>
 			<div id="headcontainer">
 				<div id="item1">
-					<h1 id="title"> Survey Form </h1>
+					<h1 id="title" class="white"> Survey Form </h1>
 				</div>
 				<div id="item2">
-					<p id="description"> bruh moment </p>
+					<p id="description" class="white"> bruh moment </p>
 				</div>
 			</div>
 		</header>
@@ -27,25 +27,60 @@
 						<input type="email" id="email" required placeholder="Email">
 					</label>
 					<label id="number-label">
-						<p id="p3"> Number </p>
-						<input type="number" id="number" min="0" max="10" placeholder="Enter a number">
+						<p id="p3"> How many pizza slices do you usually eat? </p>
+						<input type="number" id="number" min="0" max="10" placeholder="Number of pizza slices">
 					</label>
 					
-					<p id="p4"> bruh </p>
+					<p id="p4"> Which pizza shop do you like most out of the list? </p>
 					<select id="dropdown">
-					<option value="#"> # </option>
-					<option value="2">2</option>
+					<option value="Papa John's">Papa John's  </option>
+					<option value="Domino's">Domino's</option>
+					<option value="Pizza Hut">Pizza Hut</option>
+					<option value="Mazio's">Mazio's</option>
 					</select>
 					
 				<!--radio buttons-->
-					<p id="p5"> Question Placeholder </p>
-					<input type="radio" name="bruh" value="1">
-					<input type="radio" name="bruh" value="2">
-					<input type="radio" name="bruh" value="3">
+					<p id="p5"> How much sauce do you prefer? </p>
+					<label for="no sauce" class="white">
+						<input type="radio" name="toppings" id="no sauce" value="no sauce"> No Sauce
+					</label>
+					<label for="light" class="white">
+						<input type="radio" name="toppings" id="light" value="light"> Light
+					</label>
+					<label for="regular" class="white">
+						<input type="radio" name="toppings" id="regular" value="regular"> Regular
+					</label>
+					<label for="extra" class="white">
+						<input type="radio" name="toppings" id="extra" value="extra"> Extra
+					</label>
 				<!-- check boxes-->
-					<input type="checkbox" value="honk">
-					<input type="checkbox" value="honk">
-				
+					<p id="p6"> What toppings do you like? (select all that apply) </p>
+					<label for="pepperoni" class="white">
+						<input type="checkbox" id="pepperoni" value="pepperoni"> Pepperoni
+					</label>
+					<label for="beef" class="white">
+						<input type="checkbox" id="beef" value="beef"> Beef
+					</label>
+					<label for="bacon" class="white">
+						<input type="checkbox" id="bacon" value="bacon"> Bacon
+					</label>
+					<label for="chicken" class="white">
+						<input type="checkbox" id="chicken" value="chicken"> Chicken
+					</label>
+					<label for="green pepper" class="white">
+						<input type="checkbox" id="green pepper" value="green pepper"> Green Pepper
+					</label>
+					<label for="bell pepper" class="white">
+						<input type="checkbox" id="bell pepper" value="bell pepper"> Bell Pepper
+					</label>
+					<label for="olives" class="white">
+						<input type="checkbox" id="olives" value="olives"> Olives
+					</label>
+					<label for="pineapple" class="white">
+						<input type="checkbox" id="pineapple" value="pineapple"> Pineapple
+					</label>
+					
+					<p id="p7 class="white"> Any comments? </p>
 					<textarea id="comment2" placeholder="comment"></textarea>
 					<button type="submit" id="submit"> submit </button>
 				
