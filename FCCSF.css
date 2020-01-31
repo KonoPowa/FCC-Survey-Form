@@ -4,10 +4,16 @@
 	background-attachment: fixed;
 }
 
+@media screen and (max-width: 600px){
+		#s1{
+			width: 100%;
+		}
+	}
+
 #headcontainer{
 	display: grid;
 	width: 100%;
-	height: 100px;
+	height: 200px;
 	grid-template-rows: 70px 30px;
 	gird-template-columns: 100%;
 	background-color: rgba(63, 63, 191, 0.4);
@@ -64,7 +70,7 @@
 #scontainer{
 	display: grid;
 	width: 100%;
-	height: 1200px;
+	height: 1300px;
 	background-color: rgba(63, 63, 191, 0.4);
 }
 
@@ -72,11 +78,11 @@
 	border-radius: 3%;
 	display: grid;
 	width: 60%;
-	height: 1200px;
+	height: 1300px;
 	justify-self: center;
-	grid-template-rows: 600px 600px;
+	grid-template-rows: 600px 700px;
 	grid-template-columns: 100%;
-	background-color: rgba(3, 3, 113, 0.7);
+	background-color: rgba(0, 0, 45, 0.7);
 
 }
 
@@ -92,7 +98,7 @@
 
 #name, #email, #number{
 	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	width:70%;
 	height: 40px;
 	border-radius: 10px;
@@ -103,8 +109,13 @@
 #p1, #p2, #p3, #p4, #p5, #p6{
 	margin-left: 14%;
 	color: white;
-	font-size: 1.5em;
+	font-size: 30px;
+	font-family: 'Roboto Condensed', sans-serif;
 
+}
+
+#p1{
+	margin-top: 10px;
 }
 
 #p4{
@@ -120,7 +131,7 @@
 #dropdown{
 	height:45px;
 	width: 70.5%;
-	margin: 10px 0px 20px 0px;
+	margin: 10px 0px 30px 0px;
 	border-radius: 10px;
 	justify-self: center;
 
@@ -129,8 +140,11 @@
 input[type="radio"]{
 	transform: scale(1.5);
 	margin: 10px;
-	margin-left: 15%
+	margin-left: 15%;
 }
+
+
+
 
 .white{
 	color: white;
@@ -152,6 +166,9 @@ input[type="checkbox"]{
 
 #p7{
 	text-align: center;
+	margin-bottom: -55px;
+	font-size: 30px;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 #comment2{
@@ -160,11 +177,19 @@ input[type="checkbox"]{
 	justify-self: center;
 	margin-top: 50px;
 	border-radius: 5px;
+	font-size: 20px;
+}
+
+label{
+	font-size: 20px;
 }
 
 #submit{
-	height: 70px;
-	width: 100px;
+	height: 40px;
+	width: 30%;
 	justify-self: center;
 	margin-top: 8px;
+	color: white;
+	background-color: rgb(35, 199, 51);;
+	border-color: green;
 }
