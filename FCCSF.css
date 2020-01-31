@@ -1,11 +1,17 @@
+#body{
+	background-image: url("https://cdn.hipwallpaper.com/i/70/10/7u9Zg8.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
 #headcontainer{
 	display: grid;
 	width: 100%;
 	height: 100px;
 	grid-template-rows: 70px 30px;
 	gird-template-columns: 100%;
-	background-color: lightgray;
-	margin-bottom: 30px;
+	background-color: rgba(63, 63, 191, 0.4);
+	margin-bottom: 0px;
 }
 
 #item1{
@@ -14,7 +20,7 @@
 	height: 70px;
 	grid-template-rows: 100%;
 	grid-template-columns:100%;
-	background-color: #cc66ff;
+	background-color: rgba(63, 63, 191, 0);
 	justify-self: center;
 	text-align: center;
 	z-index: 1;
@@ -26,7 +32,7 @@
 	height: 30px;
 	grid-template-rows: 100%;
 	grid-template-columns: 100%;
-	background-color: #3399ff;
+	background-color: rgba(63, 63, 191, 0);
 	justify-self: center;
 }
 	
@@ -51,24 +57,26 @@
 	*{
 		margin: 0;
 		padding: 0;
-		display: grid;
+		
+		
 	}
 
 #scontainer{
 	display: grid;
 	width: 100%;
 	height: 1200px;
-	background-color: lightgray;
+	background-color: rgba(63, 63, 191, 0.4);
 }
 
 #s1{
+	border-radius: 3%;
 	display: grid;
 	width: 60%;
 	height: 1200px;
 	justify-self: center;
 	grid-template-rows: 600px 600px;
 	grid-template-columns: 100%;
-	background-color: purple;
+	background-color: rgba(3, 3, 113, 0.7);
 
 }
 
@@ -78,24 +86,35 @@
 
 }
 
+#email-label{
+	display: block;
+}
+
 #name, #email, #number{
+	margin-top: 10px;
+	margin-bottom: 20px;
 	width:70%;
 	height: 40px;
 	border-radius: 10px;
-	margin: 10px 0px 20px 0px;
-	justify-self: center;
+	margin-left: 14.5%;
 
 }
 
-#p1, #p2, #p3, #p4, #p5{
+#p1, #p2, #p3, #p4, #p5, #p6{
 	margin-left: 14%;
 	color: white;
+	font-size: 1.5em;
 
 }
 
 #p4{
 	position: relative;
 	top: 5px;
+}
+#p6{
+	margin-top: 10px;
+	margin-bottom: 5px;
+	
 }
 
 #dropdown{
@@ -113,6 +132,16 @@ input[type="radio"]{
 	margin-left: 15%
 }
 
+.white{
+	color: white;
+}
+
+input[type="checkbox"]{
+	transform: scale(1.5);
+	margin: 10px;
+	margin-left: 15%
+}
+
 /*#comment1{
 	width: 100%;
 	height: 100px;
@@ -121,12 +150,21 @@ input[type="radio"]{
 	margin-top: 200px;
 } */
 
+#p7{
+	text-align: center;
+}
+
 #comment2{
-	width:100px;
-	height:75px;
+	width:80%;
+	height:200px;
+	justify-self: center;
+	margin-top: 50px;
+	border-radius: 5px;
 }
 
 #submit{
 	height: 70px;
 	width: 100px;
+	justify-self: center;
+	margin-top: 8px;
 }
